@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/static/logo_sshouses.png";
+import "../assets/styles/components/header.scss";
 
 function Header() {
   return (
@@ -7,9 +8,9 @@ function Header() {
       <img className="header__img" src={Logo} alt="Logo SS Houses" />
 
       <div className="header__menu">
-        <div className="header__menu--profile">
+        {/* <div className="header__menu--profile">
           <img alt="" />
-        </div>
+        </div> */}
         <ul>
           <li>
             <a href="/">Home</a>
