@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../assets/static/logo_sshouses.png";
 import "../assets/styles/components/header.scss";
 
@@ -13,16 +14,16 @@ function Header() {
         </div> */}
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/">Contacto</a>
+            <Link to="/contact">Contacto</Link>
           </li>
           <li>
             <a href="/">Registrarse</a>
           </li>
           <li>
-            <a href="/">Iniciar Sesión</a>
+            <Link to="/login">Iniciar Sesión</Link>
           </li>
         </ul>
       </div>

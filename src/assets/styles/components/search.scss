@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  //   margin: 5px 60px;
+  border-radius: 0px 0px 40px 40px;
+}
+
+.main__input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid black;
+  border-radius: 25px;
+  color: black;
+  //   font-family: "Muli", sans-serif;
+  font-size: 16px;
+  height: 30px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 0px 20px;
+  width: 70%;
+}
+
+::placeholder {
+  color: black;
+}
