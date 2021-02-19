@@ -1,0 +1,42 @@
+
+.notfound__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+}
+
+.notfound__Z1{
+    animation: blink 2s linear infinite 2s;
+}
+
+.notfound__Z2{
+    animation: blink 2s linear infinite 2.5s;
+}
+
+.notfound__Z3{
+    animation: blink 2s linear infinite 3s;
+}
+
+@keyframes blink{
+    0%{opacity:0;}
+    50%{opacity:.5;}
+    100%{opacity:1;}
+}
+
+.notfound__p1{
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.notfound__p2{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.notfound__img{
+    margin-top: 50px;
+    width: 130px;
+}
