@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/static/logo_sshouses.png";
 import "../assets/styles/components/header.scss";
 
-function Header() {
+function Header({ isLogin }) {
   return (
     <header className="header">
       <img className="header__img" src={Logo} alt="Logo SS Houses" />
@@ -19,12 +19,29 @@ function Header() {
           <li>
             <Link to="/contact">Contacto</Link>
           </li>
-          <li>
-            <a href="/">Registrarse</a>
-          </li>
-          <li>
-            <Link to="/login">Iniciar Sesión</Link>
-          </li>
+          {isLogin ? (
+            <>
+              <li>
+                <Link to="/register">Registrarse</Link>
+              </li>
+              <li>
+                <Link to="/login">Iniciar Sesión</Link>
+              </li>
+            </>
+          ) : (
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn">Usuario/Vendedor</button>
+                <div class="dropdown-content">
+                  <a href="">Agregar nueva casa</a>
+                  <a href="">Editar casa</a>
+                  <a href="">Editar información</a>
+                  <a href="">Ver mi lista de casas</a>
+                  <Link to="/login">Cerrar Sesión</Link>
+                </div>
+              </div>
+            </li>
+          )}
         </ul>
       </div>
     </header>
