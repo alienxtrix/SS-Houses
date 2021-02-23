@@ -8,6 +8,9 @@ import NotFound from "../containers/NotFound";
 import Contact from "../containers/Contact";
 import Login from "../containers/Login";
 import Register from "../containers/Register";
+import Admin from "../containers/Admin";
+import NewHouse from "../containers/NewHouse";
+import DetailHouse from "../containers/DetailHouse";
 
 import CardHouse from "../components/CardHouse";
 
@@ -20,6 +23,9 @@ function App() {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
+          <Route exact path="/admin" component={Admin} />
+          <Route exact path="/newHouse" component={NewHouse} />
+          <Route exact path="/detailHouse" component={DetailHouse} />
           <Route component={NotFound} />
         </Switch>
       </Layout>

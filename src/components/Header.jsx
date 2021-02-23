@@ -9,7 +9,7 @@ function Header({ isLogin }) {
       <img className="header__img" src={Logo} alt="Logo SS Houses" />
 
       <div className="header__menu">
-        {/* <div className="header__menu--profile">
+        {/* <div classNameName="header__menu--profile">
           <img alt="" />
         </div> */}
         <ul>
@@ -30,11 +30,11 @@ function Header({ isLogin }) {
             </>
           ) : (
             <li>
-              <div class="dropdown">
-                <button class="dropbtn">Usuario/Vendedor</button>
-                <div class="dropdown-content">
-                  <a href="">Agregar nueva casa</a>
-                  <a href="">Editar casa</a>
+              <div className="dropdown">
+                <a className="dropbtn">Usuario/Vendedor</a>
+                <div className="dropdown-content">
+                  <Link to="/newHouse">Agregar nueva casa</Link>
+                  <Link to="/detailHouse">Editar casa</Link>
                   <a href="">Editar información</a>
                   <a href="">Ver mi lista de casas</a>
                   <Link to="/login">Cerrar Sesión</Link>
