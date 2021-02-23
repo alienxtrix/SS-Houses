@@ -1,6 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+require('dotenv').config();
+const webpack = require('webpack');
 
 module.exports = {
   entry: "./src/index.js",
@@ -53,6 +55,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "assets/[name].css",
     }),
+    new webpack.EnvironmentPlugin(['REACT_APP_AUTH0_DOMAIN', 'REACT_APP_AUTH0_CLIENT_ID']),
   ],
   devServer: {
     contentBase: path.join(__dirname, "dist"),
