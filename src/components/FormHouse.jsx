@@ -20,6 +20,7 @@ function FormHouse() {
 
             <div className="form-wrapper">
               <label for="">Dirección</label>
+
               <input type="text" className="form-control" />
             </div>
             <div className="form-group">
