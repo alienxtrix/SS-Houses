@@ -42,7 +42,7 @@ function FormHouse() {
             </div>
             <div className="form-wrapper">
               <label for="">Foto de la propiedad</label>
-              <input type="password" className="form-control" />
+              <input type="file" className="form-control" />
             </div>
             <div className="checkbox">
               <label>
