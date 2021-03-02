@@ -1,5 +1,7 @@
 import React from "react";
 import "../assets/styles/components/formHouse.scss";
+
+
 function FormHouse() {
   return (
     <>
@@ -53,7 +55,7 @@ function FormHouse() {
             </div>
             <button>Agregar</button>
             <button>Cancelar</button>
-          </form>
+          </form>       
         </div>
       </div>
     </>
