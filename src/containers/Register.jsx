@@ -80,7 +80,7 @@ function Register(props) {
           <div className="Login__lNumCont">
             <p className="Login__lNumberText">Number</p>
             <input
-              type="number"
+              type="text"
               id="lNumber"
               className="Login__password"
               onChange={handleChange}
